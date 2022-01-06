@@ -1,12 +1,11 @@
-import Home from "./pages/home/Home";
-
+import Router from "./routers/Router";
 
 function App() {
   return (
-    <div className="">
-      <Home />
-    </div>
-  );
+    <main className="container mx-auto">
+      <Router />
+    </main>
+  )  
 }
 
 export default App;
