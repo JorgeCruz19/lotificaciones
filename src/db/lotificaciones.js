@@ -15,6 +15,25 @@ export const lotificaciones = [
                       "lat": 98.097,
                       "long": -87.21
                   }
+                },
+                {
+                  "nombre": "Villa Fortaleza",
+                  "geo": {
+                      "lat": 98.097,
+                      "long": -87.21
+                  }
+                }
+              ]
+            },
+            {
+              "nombre": "Catacamas",
+              "lotificaciones": [
+                {
+                  "nombre": "Villa Santa",
+                  "geo": {
+                      "lat": 98.097,
+                      "long": -87.21
+                  }
                 }
               ]
             }
