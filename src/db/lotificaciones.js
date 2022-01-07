@@ -3,6 +3,7 @@ export const lotificaciones = [
     "ecomuni": {
       "departamentos": [
         {
+          "idDepartamento": 0,
           "nombre": "Olancho",
           "municipios": [
             {
@@ -20,6 +21,7 @@ export const lotificaciones = [
           ] 
         },
         {
+          "idDepartamento": 1,
           "nombre": "Francisco Morazán",
           "municipios": [
             {
