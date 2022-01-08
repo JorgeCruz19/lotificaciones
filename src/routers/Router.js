@@ -3,7 +3,7 @@ import Home from "../pages/home/Home";
 import EcomuniListDeparments from "../components/ecomuni/EcomuniListDeparments";
 import { EcomuniListCities } from "../components/ecomuni/EcomuniListCities";
 import EcomuniListLotifications from "../components/ecomuni/EcomuniListLotifications";
-
+import Navbar from "../components/Navbar";
 
 const Secopv = () => {
   return (
@@ -14,6 +14,7 @@ const Secopv = () => {
 const Router = () => {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Ecomuni */}
