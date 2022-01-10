@@ -1,13 +1,12 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
+import { NavLink } from 'react-router-dom'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
+  { name: 'Ecomuni', href: '/ecomuni/departamentos', current: true },
+  { name: 'Secopv', href: '/secopv/departamentos', current: false }
 ]
 
 function classNames(...classes) {
@@ -16,7 +15,7 @@ function classNames(...classes) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-gray-800 z-50 absolute top-0 left-0 right-0 mb-12">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -33,7 +32,7 @@ export default function Navbar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <div className="flex-shrink-0 flex items-center">
+                <NavLink to="/" className="flex-shrink-0 flex items-center">
                   <img
                     className="block lg:hidden h-8 w-auto"
                     src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
@@ -44,22 +43,23 @@ export default function Navbar() {
                     src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
                     alt="Workflow"
                   />
-                </div>
+                </NavLink>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
+                     <NavLink
+                        to='/ecomuni/departamentos'
+                        className={({isActive}) => (isActive ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium')}
+                        aria-current={({isActive}) => (isActive ? 'page' : undefined)}
                       >
-                        {item.name}
-                      </a>
-                    ))}
+                       Ecomuni
+                      </NavLink>
+                     <NavLink
+                        to='/secopv/departamentos'
+                        className={({isActive}) => (isActive ? 'bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium')}
+                        aria-current={({isActive}) => (isActive ? 'page' : undefined)}
+                      >
+                       Secopv
+                      </NavLink>
                   </div>
                 </div>
               </div>
@@ -133,20 +133,24 @@ export default function Navbar() {
 
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              {navigation.map((item) => (
-                <Disclosure.Button
-                  key={item.name}
-                  as="a"
-                  href={item.href}
-                  className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                    'block px-3 py-2 rounded-md text-base font-medium'
-                  )}
-                  aria-current={item.current ? 'page' : undefined}
-                >
-                  {item.name}
-                </Disclosure.Button>
-              ))}
+              <Disclosure.Button
+                as={NavLink}
+                to='/ecomuni/departamentos'
+                className={({isActive}) => (isActive ? 'bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium')
+                }
+                aria-current={({isActive}) => (isActive ? 'page' : undefined)}
+              >
+                Ecomuni
+              </Disclosure.Button>
+              <Disclosure.Button
+                as={NavLink}
+                to='/secopv/departamentos'
+                className={({isActive}) => (isActive ? 'bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium' : 'text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium')
+                }
+                aria-current={({isActive}) => (isActive ? 'page' : undefined)}
+              >
+                Secopv
+              </Disclosure.Button>
             </div>
           </Disclosure.Panel>
         </>

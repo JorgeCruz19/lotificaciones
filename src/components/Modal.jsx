@@ -1,8 +1,27 @@
+import { useRef, useEffect, useLayoutEffect } from 'react';
+import mapboxgl from 'mapbox-gl'
 import { Dialog, Transition } from '@headlessui/react'
-import { Fragment, useState } from 'react'
+import { Fragment, useState} from 'react'
+
+
 
 export default function Modal({nombre}) {
-  let [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
+  const ref = useRef(null);
+  const [map, setMap] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useLayoutEffect(() => {
+    if (ref.current && !map) {
+      const map = new mapboxgl.Map({
+        container: ref.current, // container ID
+        style: 'mapbox://styles/mapbox/dark-v10', // style URL
+        center: [-86.21944, 14.66667], // starting position [lng, lat]
+        zoom: 14 // starting zoom
+      });
+      setMap(map);
+    }
+  }, [ref, map])
 
   function closeModal() {
     setIsOpen(false)
@@ -10,8 +29,9 @@ export default function Modal({nombre}) {
 
   function openModal() {
     setIsOpen(true)
+    
   }
-
+  
   return (
     <>
       <div className="inset-0 flex items-center justify-center">
@@ -82,6 +102,7 @@ export default function Modal({nombre}) {
                     Got it, thanks!
                   </button>
                 </div>
+                  <div ref={ref} className="mapa-loti w-full h-60"></div>
               </div>
             </Transition.Child>
           </div>

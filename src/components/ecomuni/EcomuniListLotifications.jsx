@@ -1,15 +1,14 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { getLotificationsByCities } from '../../utils/getLotificationsByCities';
-import Modal from '../Modal';
 
 import Ecomuni from '../../assets/ecomuni.png'
-
 
 const EcomuniListLotifications = () => {
   const { departamento, ciudad } = useParams();
   const lotifications = getLotificationsByCities(departamento, ciudad);
+
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col">
+    <div className="min-h-screen flex items-center justify-center flex-col pt-32">
       <h2 className="text-3xl sm md:text-4xl text-center font-bold text-slate-800 mb-10">
           Elija la lotificación
       </h2>
@@ -34,7 +33,15 @@ const EcomuniListLotifications = () => {
                                   Ecomuni
                               </p>
                           </a>
-                          <Modal nombre={lotificacion.nombre}/>
+                          <div className="inset-0 flex items-center justify-center">
+                            <Link
+                              type="button"
+                              to={`/ecomuni/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}
+                              className="px-4 py-2 text-sm font-medium text-white bg-slate-700 rounded-md transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
+                            >
+                              Mostrar Información
+                            </Link>
+                          </div>
                       </footer>
                   </article>
               </div>
@@ -43,6 +50,7 @@ const EcomuniListLotifications = () => {
           ))
         }
       </div>
+      
     </div>
   )
 }

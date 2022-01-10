@@ -12,15 +12,29 @@ export const lotificaciones = [
                 {
                   "nombre": "Ciudad Mujer",
                   "geo": {
-                      "lat": 98.097,
-                      "long": -87.21
+                      "lat": 14.66667,
+                      "long": -86.21944
                   }
                 },
                 {
                   "nombre": "Villa Fortaleza",
                   "geo": {
-                      "lat": 98.097,
-                      "long": -87.21
+                      "lat": 14.66667,
+                      "long": -86.21944
+                  }
+                },
+                {
+                  "nombre": "Carmelo",
+                  "geo": {
+                      "lat": 14.66667,
+                      "long": -86.21944
+                  }
+                },
+                {
+                  "nombre": "Dos Caminos",
+                  "geo": {
+                      "lat": 14.66667,
+                      "long": -86.21944
                   }
                 }
               ]
@@ -31,8 +45,8 @@ export const lotificaciones = [
                 {
                   "nombre": "Villa Santa",
                   "geo": {
-                      "lat": 98.097,
-                      "long": -87.21
+                      "lat": 14.66667,
+                      "long": -86.21944
                   }
                 }
               ]
@@ -49,8 +63,8 @@ export const lotificaciones = [
                 {
                   "nombre": "Villa Fortaleza",
                   "geo": {
-                      "lat": 98.097,
-                      "long": -87.21
+                      "lat": 14.66667,
+                      "long": -86.21944
                   }
                 }
               ]

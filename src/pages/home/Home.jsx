@@ -16,7 +16,7 @@ const Home = () => {
             <figure className="mb-2">
               <img src={Ecomuni} alt="" className="h-48 ml-auto mr-auto" />
             </figure>
-              <Link to="/departamentos" className="block w-full text-white text-xl font-bold leading-none rounded-lg p-4 bg-slate-700 text-center cursor-pointer transition duration-300 hover:bg-slate-800">
+              <Link to="/ecomuni/departamentos" className="block w-full text-white text-xl font-bold leading-none rounded-lg p-4 bg-slate-700 text-center cursor-pointer transition duration-300 hover:bg-slate-800">
                 Ver más
               </Link>
           </div>

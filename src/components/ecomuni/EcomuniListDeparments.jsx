@@ -5,7 +5,7 @@ const EcomuniListDeparments = () => {
   const deparments = getAllDeparments();
   
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col">
+    <div className="min-h-screen flex items-center justify-center flex-col pt-32">
       <h2 className="text-3xl sm md:text-4xl text-center font-bold text-slate-800 mb-10">
         Elija el departamento
       </h2>
