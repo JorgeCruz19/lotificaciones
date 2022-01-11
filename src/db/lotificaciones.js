@@ -66,6 +66,32 @@ export const lotificaciones = [
                       "lat": 14.66667,
                       "long": -86.21944
                   }
+                },
+                {
+                  "nombre": "Suyapita",
+                  "geo": {
+                      "lat": 14.66667,
+                      "long": -86.21944
+                  }
+                }
+              ]
+            },
+            {
+              "nombre": "Guimaca",
+              "lotificaciones": [
+                {
+                  "nombre": "Los 3 soles",
+                  "geo": {
+                      "lat": 14.66667,
+                      "long": -86.21944
+                  }
+                },
+                {
+                  "nombre": "Ebenezar",
+                  "geo": {
+                      "lat": 14.66667,
+                      "long": -86.21944
+                  }
                 }
               ]
             }

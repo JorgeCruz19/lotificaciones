@@ -16,7 +16,7 @@ const Router = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <div className="container mx-auto p-4 relative">
+      <div className="container mx-auto p-4">
       <Routes>
           <Route path="/" element={<Home />} />
           {/* Ecomuni */}
