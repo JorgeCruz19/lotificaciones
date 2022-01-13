@@ -1,8 +1,8 @@
-import { EcomuniDeparmentCard } from "./EcomuniDeparmentCard";
-import { getAllDeparmentsEcomuni } from '../../utils/getAllDeparments'
+import { SecopvDeparmentCard } from "./SecopvDeparmentCard";
+import { getAllDeparmentsSecovp } from '../../utils/getAllDeparments'
 
-const EcomuniListDeparments = () => {
-  const deparments = getAllDeparmentsEcomuni();
+const SecopvListDeparments = () => {
+  const deparments = getAllDeparmentsSecovp();
   
   return (
     <div className="min-h-screen flex items-center justify-start flex-col pt-32">
@@ -12,7 +12,7 @@ const EcomuniListDeparments = () => {
       <div className="w-full flex flex-wrap justify-center items-center max-w-3xl">
         {
           deparments.map((deparment, index) => (
-            <EcomuniDeparmentCard key={index} name={deparment}/>
+            <SecopvDeparmentCard key={index} name={deparment}/>
           ))
         }
       </div>
@@ -20,4 +20,4 @@ const EcomuniListDeparments = () => {
   );
 };
 
-export default EcomuniListDeparments;
+export default SecopvListDeparments;

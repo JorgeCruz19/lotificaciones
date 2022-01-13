@@ -1,11 +1,11 @@
 import {useState, useRef, useLayoutEffect} from 'react'
 import { useParams } from "react-router-dom"
-import { getLotificationDetails } from "../../utils/getLotificationDetails"
+import { getLotificationDetailsSecopv } from "../../utils/getLotificationDetails"
 import { Map, Marker, NavigationControl, Popup } from 'mapbox-gl'
 
-const EcomuniLotificationDetails = () => {
+const SecopvLotificationDetails = () => {
   const {departamento, ciudad, lotificacion} = useParams()
-  const data  = getLotificationDetails(departamento, ciudad, lotificacion);
+  const data  = getLotificationDetailsSecopv(departamento, ciudad, lotificacion);
   const { nombre, geo: { lat, long }, ubicacion, telefono } = data[0];
   const ref = useRef(null);
   const [map, setMap] = useState(null);
@@ -45,4 +45,4 @@ const EcomuniLotificationDetails = () => {
   )
 }
 
-export default EcomuniLotificationDetails
+export default SecopvLotificationDetails

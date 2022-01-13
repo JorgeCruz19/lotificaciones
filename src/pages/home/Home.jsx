@@ -26,9 +26,9 @@ const Home = () => {
             <figure className="mb-2">
               <img src={Secopv} alt="" className="h-48 ml-auto mr-auto" />
             </figure>
-            <button className="w-full text-white text-xl font-bold leading-none rounded-lg p-4 bg-slate-700 text-center cursor-pointer transition duration-300 hover:bg-slate-800">
+            <Link to="/secopv/departamentos" className="w-full block text-white text-xl font-bold leading-none rounded-lg p-4 bg-slate-700 text-center cursor-pointer transition duration-300 hover:bg-slate-800">
               Ver más
-            </button>
+            </Link>
           </div>
         </div>
       </div>

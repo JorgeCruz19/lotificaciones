@@ -1,11 +1,11 @@
 import { useParams, Link } from 'react-router-dom'
-import { getLotificationsByCities } from '../../utils/getLotificationsByCities';
+import { getLotificationsByCitiesSecopv } from '../../utils/getLotificationsByCities';
 
-import Ecomuni from '../../assets/ecomuni.png'
+import Ecomuni from '../../assets/secopv.png'
 
-const EcomuniListLotifications = () => {
+const SecopvListLotifications = () => {
   const { departamento, ciudad } = useParams();
-  const data = getLotificationsByCities(departamento, ciudad);
+  const data = getLotificationsByCitiesSecopv(departamento, ciudad);
   const { nombre, lotificaciones } = data[0];
 
   return (
@@ -18,7 +18,7 @@ const EcomuniListLotifications = () => {
           lotificaciones.map((lotificacion, index) => (
               <div key={index} className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                 <article className="overflow-hidden rounded-lg shadow-lg">
-                    <Link to={`/ecomuni/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}>
+                    <Link to={`/secopv/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}>
                         <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
                     </Link>
                     <header className="flex items-center justify-between leading-tight p-2 md:p-4">
@@ -35,7 +35,7 @@ const EcomuniListLotifications = () => {
                         </a>
                         <div className="inset-0 flex items-center justify-center">
                           <Link
-                            to={`/ecomuni/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}
+                            to={`/secopv/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}
                             className="px-4 py-2 text-sm font-medium text-white bg-slate-700 rounded-md transition hover:bg-slate-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
                           >
                             Mostrar Información
@@ -53,4 +53,4 @@ const EcomuniListLotifications = () => {
   )
 }
 
-export default EcomuniListLotifications
+export default SecopvListLotifications
