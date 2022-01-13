@@ -8,11 +8,11 @@ const EcomuniListLotifications = () => {
   const lotifications = getLotificationsByCities(departamento, ciudad);
 
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col pt-32">
+    <div className="min-h-screen flex items-center justify-start flex-col pt-32">
       <h2 className="text-3xl sm md:text-4xl text-center font-bold text-slate-800 mb-10">
           Elija la lotificación
       </h2>
-      <div className="flex flex-wrap -mx-1 lg:-mx-4">
+      <div className="w-full flex flex-wrap -mx-1 lg:-mx-4">
         {
           lotifications.map(({nombre, lotificaciones}) => (
             lotificaciones.map((lotificacion, index) => (
