@@ -19,7 +19,7 @@ const SecopvListLotifications = () => {
               <div key={index} className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3">
                 <article className="overflow-hidden rounded-lg shadow-lg">
                     <Link to={`/secopv/departamento/${departamento}/${nombre}/${lotificacion.nombre}`}>
-                        <img alt="Placeholder" className="block h-auto w-full" src="https://picsum.photos/600/400/?random" />
+                        <img alt="Placeholder" className="block h-auto w-full" src={process.env.PUBLIC_URL + lotificacion.imagen} />
                     </Link>
                     <header className="flex items-center justify-between leading-tight p-2 md:p-4">
                         <h1 className="text-2xl font-bold">
@@ -27,10 +27,10 @@ const SecopvListLotifications = () => {
                         </h1>
                     </header>
                     <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                        <a className="flex items-center no-underline hover:underline text-black" href="https://www.facebook.com/ecomunihn" target="_blank">
+                        <a className="flex items-center no-underline hover:underline text-black" href="https://www.facebook.com/secopvtegucigalpa" target="_blank">
                             <img alt="Placeholder" className="block rounded-full h-8" src={Ecomuni}/>
                             <p className="ml-2 text-sm">
-                                Ecomuni
+                                Secopv
                             </p>
                         </a>
                         <div className="inset-0 flex items-center justify-center">
