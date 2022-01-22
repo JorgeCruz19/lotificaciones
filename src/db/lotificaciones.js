@@ -15,8 +15,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/1.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.658014430984473,
+                      "long": -86.18492610671159
                   }
                 },
                 {
@@ -25,8 +25,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/2.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.657208642790236,
+                      "long": -86.17762988217846
                   }
                 },
                 {
@@ -35,8 +35,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/3.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.637147924704948,
+                      "long": -86.21715713408042
                   }
                 },
                 {
@@ -45,8 +45,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/4.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.632435968739673,
+                      "long": -86.22314419793507
                   }
                 },
                 {
@@ -55,8 +55,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/5.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.630436304690015,
+                      "long": -86.20713018024905
                   }
                 },
                 {
@@ -65,18 +65,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/6.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
-                  }
-                },
-                {
-                  "nombre": "Altos de la Morita",
-                  "ubicacion": "",
-                  "telefono": "2785-6740/2785-3794",
-                  "imagen": "/img/7.jpg",
-                  "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.661929862382312,
+                      "long": -86.20303387195017
                   }
                 },
                 {
@@ -85,8 +75,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/8.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.659273490040913,
+                      "long": -86.19038843785113
                   }
                 },
                 {
@@ -95,8 +85,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/9.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.651390101859711,
+                      "long": -86.1612598346101
                   }
                 },
                 {
@@ -105,8 +95,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/10.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.665046298750157,
+                      "long": -86.19273131685563
                   }
                 },
                 {
@@ -125,8 +115,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/12.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.65865378983097,
+                      "long": -86.18892689990189
                   }
                 },
                 {
@@ -135,8 +125,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/13.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.683352633113124,
+                      "long": -86.20569385459464
                   }
                 },
                 {
@@ -145,8 +135,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/14.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.684572812399288,
+                      "long": -86.20842738592015
                   }
                 },
                 {
@@ -165,8 +155,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/16.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.637495309153145,
+                      "long": -86.21425430141744
                   }
                 },
                 {
@@ -175,8 +165,8 @@ export const lotificaciones = [
                   "telefono": "2785-6740/2785-3794",
                   "imagen": "/img/17.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.66172426596142,
+                      "long": -86.19843023190319
                   }
                 },
               ]
@@ -403,18 +393,18 @@ export const lotificaciones = [
                   "telefono": "9967-0695/2785-7477",
                   "imagen": "/img/1.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.648643785709135,
+                      "long": -86.21989860707292
                   }
                 },
                 {
-                  "nombre": "Dos Camino",
+                  "nombre": "Dos Caminos",
                   "ubicacion": "",
                   "telefono": "9967-0695/2785-7477",
                   "imagen": "/img/2.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.66330489018413,
+                      "long": -86.17908309825252
                   }
                 },
                 {
@@ -423,8 +413,8 @@ export const lotificaciones = [
                   "telefono": "9967-0695/2785-7477",
                   "imagen": "/img/3.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.689241627792338,
+                      "long": -86.18320900116731
                   }
                 },
                 {
@@ -433,8 +423,8 @@ export const lotificaciones = [
                   "telefono": "9967-0695/2785-7477",
                   "imagen": "/img/4.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.645545116797077,
+                      "long": -86.22090003144142
                   }
                 },
                 {
@@ -453,8 +443,8 @@ export const lotificaciones = [
                   "telefono": "9967-0695/2785-7477",
                   "imagen": "/img/16.jpg",
                   "geo": {
-                      "lat": 14.66667,
-                      "long": -86.21944
+                      "lat": 14.714006293592806,
+                      "long": -86.15465893684804
                   }
                 },
               ]

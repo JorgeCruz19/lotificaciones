@@ -7,7 +7,6 @@ const EcomuniListLotifications = () => {
   const { departamento, ciudad } = useParams();
   const data = getLotificationsByCities(departamento, ciudad);
   const { nombre, lotificaciones } = data[0];
-  console.log(data)
 
   return (
     <div className="min-h-screen flex items-center justify-start flex-col pt-32">
@@ -28,7 +27,7 @@ const EcomuniListLotifications = () => {
                         </h1>
                     </header>
                     <footer className="flex items-center justify-between leading-none p-2 md:p-4">
-                        <a className="flex items-center no-underline hover:underline text-black" href="https://www.facebook.com/ecomunihn" target="_blank">
+                        <a className="flex items-center no-underline hover:underline text-black" href="https://www.facebook.com/ecomunihn" target="_blank" rel='noopener noreferrer'>
                             <img alt="Placeholder" className="block rounded-full h-8" src={Ecomuni}/>
                             <p className="ml-2 text-sm">
                                 Ecomuni

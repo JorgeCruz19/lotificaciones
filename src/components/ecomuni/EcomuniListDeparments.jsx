@@ -1,5 +1,6 @@
 import { EcomuniDeparmentCard } from "./EcomuniDeparmentCard";
 import { getAllDeparmentsEcomuni } from '../../utils/getAllDeparments'
+import MapaEcomuni from '../../assets/mapa-ecomuni.png'
 
 const EcomuniListDeparments = () => {
   const deparments = getAllDeparmentsEcomuni();
@@ -16,6 +17,7 @@ const EcomuniListDeparments = () => {
           ))
         }
       </div>
+      <img src={MapaEcomuni} alt="Mapa Ecomuni" className="max-w-3xl object-conver rounded" />
     </div>
   );
 };

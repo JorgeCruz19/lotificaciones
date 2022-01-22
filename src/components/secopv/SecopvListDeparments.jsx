@@ -1,5 +1,6 @@
 import { SecopvDeparmentCard } from "./SecopvDeparmentCard";
 import { getAllDeparmentsSecovp } from '../../utils/getAllDeparments'
+import MapaSecopv from '../../assets/mapa-secopv.png'
 
 const SecopvListDeparments = () => {
   const deparments = getAllDeparmentsSecovp();
@@ -16,6 +17,7 @@ const SecopvListDeparments = () => {
           ))
         }
       </div>
+      <img src={MapaSecopv} alt="Mapa Secopv" className="max-w-3xl object-conver rounded" />
     </div>
   );
 };
